@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>UI</title>
+<link rel="stylesheet" href="ui.css" />
+<link rel="stylesheet" href="static/dist/css/style-button.css" />
+<style>
+body{width:1200px;margin:0 auto;padding:0px 0 30px;}
+h1{text-align:center;line-height:3em;border-bottom:1px solid #ddd;margin-bottom:1em;}
+h2{clear:both;width:100%;text-indent:.5em;margin:10px 0 20px;font-family:microsoft yahei;font-weight:bold;border-left:6px solid #f60}
+form{clear:both;float:left}
+p{clear:both;padding:20px 0 6px;}
+.demo .g{background:#fafafa;text-indent:-3em;margin-bottom:4px;height:2em;line-height:2em;}
+.demo .g div{background:#eaeaea;}
+.fenge{clear:both;height:2em;border-bottom:1px solid #ddd;margin-bottom:2em;}
+.blank{height:5px}
+</style>
+</head>
+<body>
+<h1>UI框架</h1>
+<div class="g">
+<div class="u-1-2">
+<div style="padding-right:10px;">
+<h2>Grid 栅格</h2>
+<p>支持最多24个分割</p>
+<div class="demo">
+<div class="g">
+    <div class="u-1-24">1-24</div>
+</div>
+<div class="g">
+    <div class="u-1-12">1-12</div>
+</div>
+
+<div class="g">
+    <div class="u-1-6">1-6</div>
+</div>
+<div class="g">
+    <div class="u-4-24">4-24</div>
+</div>
+<div class="g">
+    <div class="u-3-8">3-8</div>
+</div>
+<div class="g">
+    <div class="u-7-12">7-12</div>
+</div>
+<div class="g">
+    <div class="u-1-1">1-1</div>
+</div>
+</div>
+
+<div class="fenge"></div>
+
+<h2>单行表单</h2>
+<form class="form">
+    <fieldset>
+        <legend>请登陆</legend>
+        <label for="email">邮箱</label>
+        <input class="s" type="email">
+        <label for="password">密码</label>
+        <input class="s" type="password">
+        <label for="remember"><input id="remember" type="checkbox"> 记住密码</label>
+        <button type="submit" class="btn btn-red btn-s radius">登陆</button>
+    </fieldset>
+</form>
+
+<div class="fenge"></div>
+
+<div class="g">
+<div class="u-2-5">
+<h2>多行表单</h2>
+<form class="form form-stacked">
+    <fieldset>
+		<legend>请登陆</legend>
+        <label for="email">邮箱</label>
+        <input id="email" type="email">
+
+        <label for="password">密码</label>
+        <input id="password" type="password">
+
+        <label for="state">地区</label>
+        <select id="state">
+            <option>上海</option>
+            <option>北京</option>
+            <option>广州</option>
+        </select>
+
+        <label for="remember" class="checkbox">
+            <input id="remember" type="checkbox"> 记住密码
+        </label>
+
+        <button type="submit" class="btn btn-blue radius">登陆账户</button>
+    </fieldset>
+</form>
+</div>
+<div class="u-3-5">
+<h2>对齐表单</h2>
+
+<form class="form form-aligned">
+    <fieldset>
+    	<legend>请登陆</legend>
+        <div class="control-group">
+            <label for="name">用户名</label>
+            <input id="name" type="text">
+        </div>
+
+        <div class="control-group">
+            <label for="password">密码</label>
+            <input id="password" type="password">
+        </div>
+
+        <div class="control-group">
+            <label for="email">邮箱</label>
+            <input id="email" type="email">
+        </div>
+
+        <div class="control-group">
+            <label for="foo">特别长的字段会自动换行且不会错位</label>
+            <input id="foo" type="text">
+        </div>
+
+        <div class="controls">
+            <label for="cb" class="checkbox">
+                <input id="cb" type="checkbox"> 已经阅读并同意协议
+            </label>
+
+            <button type="submit" class="btn btn-blue radius">提交注册</button>
+        </div>
+    </fieldset>
+</form>
+</div>
+</div>
+
+
+<div class="fenge"></div>
+
+
+<h2>多栏表单</h2>
+<form class="form form-stacked g u">
+    <fieldset>
+        <legend></legend>
+
+        <div class="g">
+            <div class="u-1-3">
+                <label for="first-name">账号</label>
+                <input id="first-name" class="u-23-24" type="text">
+            </div>
+
+            <div class="u-1-3">
+                <label for="last-name">密码</label>
+                <input id="last-name" class="u-23-24" type="text">
+            </div>
+
+            <div class="u-1-3">
+                <label for="email">E-Mail</label>
+                <input id="email" class="u-23-24" type="email" required>
+            </div>
+
+            <div class="u-1-3">
+                <label for="city">城市</label>
+                <input id="city" class="u-23-24" type="text">
+            </div>
+
+            <div class="u-1-3">
+                <label for="state">国家</label>
+                <select id="state" class="u-1-2">
+                    <option>中国</option>
+                    <option>美国</option>
+                    <option>日本</option>
+                </select>
+            </div>
+        </div>
+
+        <label for="terms" class="checkbox">
+            <input id="terms" type="checkbox"> 已经阅读并同意协议
+        </label>
+
+        <button type="submit" class="btn btn-blue radius">提交注册</button>
+    </fieldset>
+</form>
+
+<div class="fenge"></div>
+
+<h2>表单尺寸</h2>
+
+<form class="form" style="width:100%;">
+    <input class="u-1" type="text" placeholder=".u-1">
+    <div class="clear blank"></div>
+    <input class="u-2-3" type="text" placeholder=".u-2-3">
+    <div class="clear blank"></div>
+    <input class="u-1-2" type="text" placeholder=".u-1-2">
+    <div class="clear blank"></div>
+    <input class="u-1-3" type="text" placeholder=".u-1-3">
+    <div class="clear blank"></div>
+    <input class="u-1-4" type="text" placeholder=".u-1-4">
+    
+ </form>
+<div class="fenge"></div>
+
+<div class="g">
+<div class="u-1-2">
+<form class="form" style="width:400px">
+  <input class="l" type="text" placeholder=".l">
+  <div class="clear blank"></div>
+  <input type="text" placeholder="默认的">
+  <div class="clear blank"></div>
+  <input class="s" type="text" placeholder=".s">
+  <div class="clear blank"></div>
+  <input class="xs" type="text" placeholder=".xs">
+  <div class="clear blank"></div>
+ </form>
+</div>
+<div class="u-1-2">
+
+<form class="form">
+    <input type="text" placeholder="Disabled" disabled>
+</form>
+<div class="clear blank"></div>
+<form class="form">
+    <input type="text" value="Readonly" readonly>
+</form>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="u-1-2">
+<div style="padding-left:10px;">
+
+<h2>按钮</h2>
+<p>默认样式</p>
+
+<button type="button" class="btn btn-gray">gray</button>
+<button type="button" class="btn btn-blue">blue</button>
+<button type="button" class="btn btn-cyan">cyan</button>
+<button type="button" class="btn btn-green">green</button>
+<button type="button" class="btn btn-yellow">yellow</button>
+<button type="button" class="btn btn-red">red</button>
+
+<p>圆角按钮加上class: radius</p>
+<button type="button" class="btn btn-gray radius">gray</button>
+<button type="button" class="btn btn-blue radius">blue</button>
+<button type="button" class="btn btn-cyan radius">cyan</button>
+<button type="button" class="btn btn-green radius">green</button>
+<button type="button" class="btn btn-yellow radius">yellow</button>
+<button type="button" class="btn btn-red radius">red</button>
+
+<p>椭圆形按钮加上class: round</p>
+<button type="button" class="btn btn-gray round">gray</button>
+<button type="button" class="btn btn-blue round">blue</button>
+<button type="button" class="btn btn-cyan round">cyan</button>
+<button type="button" class="btn btn-green round">green</button>
+<button type="button" class="btn btn-yellow round">yellow</button>
+<button type="button" class="btn btn-red round">red</button>
+
+<p>椭圆形按钮加上class: -o</p>
+<button type="button"class="btn btn-gray-o">gray</button>
+<button type="button" class="btn btn-blue-o">blue</button>
+<button type="button" class="btn btn-green-o">green</button>
+<button type="button" class="btn btn-yellow-o">yellow</button>
+<button type="button" class="btn btn-red-o">red</button>
+
+
+<p>按钮尺寸</p>
+<button type="button" class="btn btn-blue btn-xl">btn-xl</button>
+<button type="button" class="btn btn-blue btn-l">btn-l</button>
+<button type="button" class="btn btn-blue">btn</button>
+<button type="button" class="btn btn-blue btn-s">btn-s</button>
+<button type="button" class="btn btn-blue btn-xs">btn-xs</button>
+
+<p>按钮状态</p>
+<button type="button" class="btn btn-blue active">active</button>
+<button type="button" class="btn btn-gray active">active</button>
+<button type="button" class="btn btn-blue" disabled="disabled">disabled</button>
+<button type="button" class="btn btn-gray" disabled="disabled">disabled</button>
+
+<p>块级显示添加class: btn-block</p>
+<button type="button" class="btn btn-blue btn-block radius">btn-block</button>
+<button type="button" class="btn btn-gray btn-block radius">btn-block</button>
+
+
+
+<div class="fenge"></div>
+
+<h2>提示信息</h2>
+
+<div class="tip tip-green">恭喜您，注册成功。点击查看<a href="#">《用户指南》</a>.</div>
+<div class="tip tip-yellow">下单成功后，请在24小时内完成付款，超时订单将自动取消。<a href="#">去支付</a>！</div>
+<div class="tip tip-red">订单支付失败，<a href="#">重新支付</a>！</div>
+
+
+<div class="fenge"></div>
+
+<h2>页面步骤</h2>
+
+<ol class="cd-multi-steps text-top">
+	<li class="visited"><a href="#0">购物车</a></li>
+	<li class="visited" ><a href="#0">支付</a></li>
+	<li class="current"><em>配送</em></li>
+	<li><em>总览</em></li>
+</ol>
+<br />
+
+<ol class="cd-multi-steps text-bottom count">
+	<li class="visited"><a href="#0">购物车</a></li>
+	<li class="visited" ><a href="#0">支付</a></li>
+	<li class="current"><em>配送</em></li>
+	<li><em>总览</em></li>
+</ol>
+
+
+
+
+
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="http://a.choqi.com/lib/jquery/jquery-1.7.2.js"></script>
+<script>
+  less = {
+    env: "development",
+    async: false,
+    fileAsync: false,
+    poll: 1000,
+    functions: {},
+    dumpLineNumbers: "comments",
+    relativeUrls: false,
+    rootpath: ":/a.com/"
+  };
+</script>
+<script src="less.js"></script>
+</body>
+</html>
